@@ -1,0 +1,21 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+.alpha {
+    color: $purple;
+}
+
+.beta {
+    color: $yellow-300;
+    background-color: $indigo-900;
+}
+
+.gray-400 {
+    background: $gray-400;
+}
