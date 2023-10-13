@@ -14,51 +14,25 @@
                                 <div class="col align-self-center text-end text-muted">3 items</div>
                             </div>
                         </div>
-                        <div class="row border-top border-bottom">
-                            <div class="row main align-items-center">
-                                <div class="col-2"><img class="img-fluid" src="https://i.imgur.com/1GrakTl.jpg"></div>
-                                <div class="col">
-                                    <div class="row text-muted">Shirt</div>
-                                    <div class="row">Cotton T-shirt</div>
-                                </div>
-                                <div class="col">
-                                    <input type="number" value="1" min="1" max="10" class="form-control">
-                                </div>
-                                <div class="col d-flex justify-content-center">
-                                    <span>&euro; 44.00</span><span class="ms-auto">&#10005;</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="row main align-items-center">
-                                <div class="col-2"><img class="img-fluid" src="https://i.imgur.com/ba3tvGm.jpg"></div>
-                                <div class="col">
-                                    <div class="row text-muted">Shirt</div>
-                                    <div class="row">Cotton T-shirt</div>
-                                </div>
-                                <div class="col">
-                                    <input type="number" value="1" min="1" max="10" class="form-control">
-                                </div>
-                                <div class="col d-flex justify-content-center">
-                                    <span>&euro; 44.00</span><span class="ms-auto">&#10005;</span>
+
+                        @foreach ($products as $product)
+                            <div class="row border-top border-bottom">
+                                <div class="row main align-items-center">
+                                    <div class="col-2"><img class="img-fluid" src="{{ $product->image }}"></div>
+                                    <div class="col">
+                                        <div class="row text-muted">Shirt</div>
+                                        <div class="row">{{ $product->name }}</div>
+                                    </div>
+                                    <div class="col">
+                                        <input type="number" value="1" min="1" max="10"
+                                            class="form-control">
+                                    </div>
+                                    <div class="col d-flex justify-content-center">
+                                        <span>&euro; {{ $product->price }}</span><span class="ms-auto">&#10005;</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row border-top border-bottom">
-                            <div class="row main align-items-center">
-                                <div class="col-2"><img class="img-fluid" src="https://i.imgur.com/pHQ3xT3.jpg"></div>
-                                <div class="col">
-                                    <div class="row text-muted">Shirt</div>
-                                    <div class="row">Cotton T-shirt</div>
-                                </div>
-                                <div class="col">
-                                    <input type="number" value="1" min="1" max="10" class="form-control">
-                                </div>
-                                <div class="col d-flex justify-content-center">
-                                    <span>&euro; 44.00</span><span class="ms-auto">&#10005;</span>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                     <div class="col-md-4 summary gray-400 py-4">
                         <div class="container d-flex flex-column h-100">
