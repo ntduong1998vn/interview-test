@@ -54,7 +54,7 @@
                             </div>
 
                             <form>
-                                <div class="fw-semibold pt-3 pb-1">GIVE CODE</div>
+                                <div class="fw-semibold pt-3 pb-1">COUPON</div>
                                 <input id="code" placeholder="Enter your code" class="form-control">
                             </form>
                             <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
